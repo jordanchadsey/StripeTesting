@@ -1,0 +1,31 @@
+{
+  "name": "stripetesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "client": "node scripts/start-client.js",
+    "seed": "node scripts/seedDB.js",
+    "start": "concurrently \"nodemon index.js\" \"npm run client\"",
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanchadsey/StripeTesting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanchadsey/StripeTesting/issues"
+  },
+  "homepage": "https://github.com/jordanchadsey/StripeTesting#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "path": "^0.12.7",
+    "react-stripe-checkout": "^2.6.3",
+    "stripe": "^5.8.0"
+  }
+}
